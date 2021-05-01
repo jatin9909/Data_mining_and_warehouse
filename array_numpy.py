@@ -36,17 +36,39 @@ print(np.linspace(0,1,20))
 
 mat = np.arange(1,26).reshape(5,5)
 print(mat)
+'''[[ 1  2  3  4  5]
+ [ 6  7  8  9 10]
+ [11 12 13 14 15]
+ [16 17 18 19 20]
+ [21 22 23 24 25]]
+'''
 
 
-print(mat[2:,1:])
+print(mat[2:,1:]) 
+'''
+[[12 13 14 15]
+ [17 18 19 20]
+ [22 23 24 25]]
+'''
 
 print(mat[3,4])
+#20
 
 print(mat[:3,1:2])
+'''
+[[ 2]
+ [ 7]
+ [12]]
+''' 
 
 print(mat[4,:])
+#[21 22 23 24 25]
 
 print(mat[3:5,:])
+'''
+[[16 17 18 19 20]
+ [21 22 23 24 25]]
+'''
 
 #Get the sum of all the values in mat
 print(mat.sum())
